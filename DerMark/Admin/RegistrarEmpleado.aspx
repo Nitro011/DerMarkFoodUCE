@@ -126,9 +126,7 @@
                             <label class="form-control-label">Nombre:<abbr title="Este campo es obligatorio">*</abbr>
                             </label>
                             <input class="form-control" id="nombre" onkeypress="return check(event)" type="text" placeholder="Nombre" required="required">
-                            <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                           
                         </div>
                     </div>
                     <!-- col-4 -->
@@ -136,9 +134,7 @@
                         <div class="form-group">
                             <label class="form-control-label">Apellidos:<abbr title="Este campo es obligatorio">*</abbr></label>
                             <input class="form-control" id="apellido" onkeypress="return check(event)" type="text" placeholder="Apellidos" required="required">
-                             <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                            
 
                         </div>
                     </div>
@@ -148,9 +144,7 @@
                             <label class="form-control-label">Correo electronico:<abbr title="Este campo es obligatorio">*</abbr>
                                 <span id="emailOK"></span></label>
                             <input class="form-control" type="email" id="mail" placeholder="Correo electronico" required="required">
-                             <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                             
                         </div>
                     </div>
                     <!-- col-4 -->
@@ -170,9 +164,7 @@
                             <label class="form-control-label">Telefono:<abbr title="Este campo es obligatorio">*</abbr>
                             </label>
                             <input class="form-control" type="text" id="telefono" name="tel" placeholder="Telefono" required="required">
-                             <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                           
                         </div>
                     </div>
                     <!-- col-4 -->
@@ -187,9 +179,7 @@
 
 
                             </select>
-                               <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                             
                         </div>
                     </div>
 
@@ -242,9 +232,7 @@
                             <label for="exampleFormControlTextarea1">Dirección:<abbr title="Este campo es obligatorio">*</abbr>
                             </label>
                             <textarea class="form-control" id="direccion" rows="3" required="required"></textarea>
-                             <div class="valid-feedback">
-                                Datos válido!!
-                            </div>
+                             
                         </div>
                     </div>
 

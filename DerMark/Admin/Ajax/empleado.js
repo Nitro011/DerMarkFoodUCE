@@ -93,6 +93,8 @@ function enviar() {
 
     else if (validar_telefono(celular) == false) {
 
+        document.getElementById("telefono").style.borderColor = "red";
+
         $("#alerta").html('<div class="alert alert-info" role="alert"> El telefono contiene datos Inválidos </div>');
 
     }

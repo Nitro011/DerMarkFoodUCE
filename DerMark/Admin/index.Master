@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="DerMark.Admin.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>DerMark Admin</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!--js-->
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    
+
+   
+    <script src="../push.min.js"></script>
+   
+    <script src="Ajax/index.js"></script>
+    <script src="Ajax/empleado.js"></script>
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css">
+</head>
+<body class="collapsed-menu">
+
+    <!-- ########## START: LEFT PANEL ########## -->
+    <div class="br-logo"><a href=""><span>[</span>DerMark <i>Food</i><span>]</span></a></div>
+    <div class="br-sideleft sideleft-scrollbar">
+        <label class="sidebar-label pd-x-10 mg-t-20 op-3">Menu</label>
+        <ul class="br-sideleft-menu">
+            <li class="br-menu-item">
+                <a href="index.html" class="br-menu-link">
+                    <i class="menu-item-icon icon ion-ios-home-outline tx-24"></i>
+                    <span class="menu-item-label">Pagina principal</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>
+            <!-- br-menu-item -->
+            <%--<li class="br-menu-item">
+                <a href="mailbox.html" class="br-menu-link">
+                    <i class="menu-item-icon icon ion-ios-email-outline tx-24"></i>
+                    <span class="menu-item-label">Mailbox</span>
+                </a>
+                <!-- br-menu-link -->
+            </li>--%>
+            <!-- br-menu-item -->
+            <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon icon ion-person tx-20"></i>
+                    <span class="menu-item-label">Empleados</span>
+                </a>
+                <!-- br-menu-link -->
+                <ul class="br-menu-sub">
+
+                    <li class="sub-item"><a href="RegistrarEmpleado.aspx" class="sub-link">Registrar</a></li>
+                    <li class="sub-item"><a href="card-social.html" class="sub-link">Consultar</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- br-sideleft-menu -->
+
+
+
+
+
+        <br>
+    </div>
+    <!-- br-sideleft -->
+    <!-- ########## END: LEFT PANEL ########## -->
+
+
+
+    <!-- ########## START: HEAD PANEL ########## -->
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- br-header -->
+    <!-- ########## END: HEAD PANEL ########## -->
+
+
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+
+        <div>
+            <form class="needs-validation" novalidate id="form1" method="post" onsubmit="return enviar()"  >
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </form>
+        </div>
+        <!-- d-flex -->
+
+        <div class="br-pagebody">
+
+            <!-- start you own content here -->
+
+        </div>
+        <!-- br-pagebody -->
+    </div>
+    <!-- br-mainpanel -->
+
+
+
+    <!-- ########## END: MAIN PANEL ########## -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-ui/ui/widgets/datepicker.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+     
+
+
+     <script src="../jquery.mask.min.js"></script>
+
+    <script src="js/bracket.js"></script>
+    
+
+
+
+    
+
+</body>
+</html>

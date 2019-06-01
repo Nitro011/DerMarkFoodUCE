@@ -1,0 +1,11 @@
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.BL.dll
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.BL.pdb
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\obj\Debug\Capa.BL.csprojAssemblyReference.cache
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\obj\Debug\Capa.BL.csproj.CoreCompileInputs.cache
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\obj\Debug\Capa.BL.dll
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\obj\Debug\Capa.BL.pdb
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.Datos.dll
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.Entidad.dll
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.Datos.pdb
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\bin\Debug\Capa.Entidad.pdb
+C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.BL\obj\Debug\Capa.BL.csproj.CopyComplete

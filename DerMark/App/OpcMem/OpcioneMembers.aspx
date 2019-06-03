@@ -68,10 +68,10 @@
 
                 <div class="card mb-4 box-shadow">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Personal</h4>
+                        <h4 class="my-0 font-weight-normal">Demo</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">Gratis <small class="text-muted"></small></h1>
+                        <h1 class="card-title pricing-card-title">Prueba gratis de 15 dias <small class="text-muted"></small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>1 Solo establecimiento</li>
                             <%-- <li>10 GB of storage</li>

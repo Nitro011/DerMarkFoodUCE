@@ -7,3 +7,12 @@ C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.Datos\obj\
 C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.Datos\bin\Debug\Capa.Entidad.dll
 C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.Datos\bin\Debug\Capa.Entidad.pdb
 C:\Users\arqui\OneDrive\Escritorio\Proyecto DerMark Soft\DerMark\Capa.Datos\obj\Debug\Capa.Datos.csproj.CopyComplete
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\bin\Debug\Capa.Datos.dll
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\bin\Debug\Capa.Datos.pdb
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\bin\Debug\Capa.Entidad.dll
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\bin\Debug\Capa.Entidad.pdb
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\obj\Debug\Capa.Datos.csprojAssemblyReference.cache
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\obj\Debug\Capa.Datos.csproj.CoreCompileInputs.cache
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\obj\Debug\Capa.Datos.csproj.CopyComplete
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\obj\Debug\Capa.Datos.dll
+C:\Users\arqui\Source\Repos\DerMarkFoodUCE\Capa.Datos\obj\Debug\Capa.Datos.pdb

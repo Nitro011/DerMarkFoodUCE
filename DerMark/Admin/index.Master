@@ -16,24 +16,31 @@
 
     <title>DerMark Admin</title>
 
-    <!-- vendor css -->
-    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
     <!--js-->
     <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../Scripts/jquery-3.3.1.js"></script>
     
-
-   
-    <script src="../push.min.js"></script>
-   
+    <script src="Ajax/admin.js"></script>
+    <script src="Ajax/ingredientes.js"></script>
     <script src="Ajax/index.js"></script>
     <script src="Ajax/empleado.js"></script>
     <!-- Bracket CSS -->
+    
+    <!-- vendor css -->
+   
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+     <link href="lib/highlightjs/styles/github.css" rel="stylesheet" />
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet" />
+     <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
+
+
+
     <link rel="stylesheet" href="css/bracket.css">
 </head>
-<body class="collapsed-menu">
+<body >
 
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="br-logo"><a href=""><span>[</span>DerMark <i>Food</i><span>]</span></a></div>
@@ -68,6 +75,21 @@
                     <li class="sub-item"><a href="card-social.html" class="sub-link">Consultar</a></li>
                 </ul>
             </li>
+             <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon ion-coffee tx-20"></i>
+                    <span class="menu-item-label">Productos</span>
+                </a>
+                <!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                 
+                    <li class="sub-item"><a href="Ingredientes.aspx" class="sub-link">Ingredientes</a></li>
+
+                    <li class="sub-item"><a href="card-social.html" class="sub-link">Consumibles</a></li>
+                </ul>
+            </li>
+
+
         </ul>
         <!-- br-sideleft-menu -->
 
@@ -95,21 +117,17 @@
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
 
-        <div>
+      
             <form class="needs-validation" novalidate id="form1" method="post" onsubmit="return enviar()"  >
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
 
             </form>
-        </div>
+        
         <!-- d-flex -->
 
-        <div class="br-pagebody">
-
-            <!-- start you own content here -->
-
-        </div>
+      
         <!-- br-pagebody -->
     </div>
     <!-- br-mainpanel -->
@@ -126,11 +144,23 @@
     <script src="lib/peity/jquery.peity.min.js"></script>
      
 
+    <!--Datatable-->
+    
+    <script src="lib/highlightjs/highlight.pack.min.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
 
+
+    <!--end datatable-->
      <script src="../jquery.mask.min.js"></script>
 
     <script src="js/bracket.js"></script>
     
+
+
 
 
 

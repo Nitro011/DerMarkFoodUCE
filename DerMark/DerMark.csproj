@@ -111,6 +111,7 @@
     <Content Include="Admin\Ajax\empleado.js" />
     <Content Include="Admin\Ajax\index.js" />
     <Content Include="Admin\Ajax\ingredientes.js" />
+    <Content Include="Admin\Ajax\productos_Ingredientes.js" />
     <Content Include="Admin\CssModificado\Ingredientes.css" />
     <Content Include="Admin\css\bracket.css" />
     <Content Include="Admin\css\bracket.dark.css" />

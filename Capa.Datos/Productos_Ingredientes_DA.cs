@@ -25,9 +25,9 @@ namespace Capa.Datos
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@productos",pe.nombres_productos);
-                cmd.Parameters.AddWithValue("@cantidad", pe.nombres_productos);
-                cmd.Parameters.AddWithValue("@unidad_de_medida", pe.nombres_productos);
-                cmd.Parameters.AddWithValue("@descripcion", pe.nombres_productos);
+                cmd.Parameters.AddWithValue("@cantidad", pe.cantidad);
+                cmd.Parameters.AddWithValue("@unidad_de_medida", pe.unidad_de_medida);
+                cmd.Parameters.AddWithValue("@descripcion", pe.descripcion);
               
 
 

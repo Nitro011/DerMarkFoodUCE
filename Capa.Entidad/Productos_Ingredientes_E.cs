@@ -11,7 +11,8 @@ namespace Capa.Entidad
 
         public int idIngredientes { get; set; }
         public string nombres_productos { get; set; }
-        public int unidad_de_medida { get; set; }
+        public int cantidad { get; set; }
+        public decimal unidad_de_medida { get; set; }
         public string descripcion { get; set; }
       
 

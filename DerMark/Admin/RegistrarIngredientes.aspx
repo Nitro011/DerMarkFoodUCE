@@ -102,54 +102,59 @@
 
 
     <div class="br-pagebody">
-
+          <div id="alerta">
+    </div>
         <div class="br-section-wrapper">
-            <div class="col-xl-12">
-                <div class="form-layout form-layout-4">
-                    <h6 class="br-section-label">Agregar Productos Ingredientes</h6>
-                   <%-- <p class="br-section-text">A basic form where labels are aligned in left.</p>--%>
-                    <div class="row">
-                        <label class="col-sm-4 form-control-label">Nombre del producto <span class="tx-danger">*</span></label>
-                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                            <input type="text" class="form-control" placeholder="Nombre del producto">
+            <form class="needs-validation" novalidate id="form1" method="post" onsubmit="return enviar1();">
+                <div class="col-xl-12">
+                    <div class="form-layout form-layout-4">
+                        <h6 class="br-section-label">Agregar Productos Ingredientes</h6>
+                        <%-- <p class="br-section-text">A basic form where labels are aligned in left.</p>--%>
+                        <div class="row">
+                            <label class="col-sm-4 form-control-label">Nombre del producto <span class="tx-danger">*</span></label>
+                            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                <input type="text" class="form-control" id="np" placeholder="Nombre del producto" required="required">
+                            </div>
                         </div>
-                    </div>
-                    <!-- row -->
-                    <div class="row mg-t-20">
-                        <label class="col-sm-4 form-control-label">Cantidad <span class="tx-danger">*</span></label>
-                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                            <input type="number" class="form-control">
+                        <!-- row -->
+                        <div class="row mg-t-20">
+                            <label class="col-sm-4 form-control-label">Cantidad <span class="tx-danger">*</span></label>
+                            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                <input type="number" id="cantidadU" class="form-control" required="required">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mg-t-20">
-                        <label class="col-sm-4 form-control-label">Unidad de medida <span class="tx-danger">*</span></label>
-                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                            <select class="custom-select">
-                                <option selected>Selecciona</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
+                        <div class="row mg-t-20">
+                            <label class="col-sm-4 form-control-label">Unidad de medida <span class="tx-danger">*</span></label>
+                            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                <select id="unidad_medida" class="custom-select" required="required">
+                                    <option value="" selected>Selecciona</option>
+                                    <option value="2">U/N</option>
+                                    <option value="1">Libra</option>
+                                    <option value="2">Litro</option>
+                                    <option value="2">Gramo</option>
 
-                    <div class="row mg-t-20">
-                        <label class="col-sm-4 form-control-label">Descripción <span class="tx-danger"></span></label>
-                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                            <textarea rows="2" class="form-control" placeholder="Descripción"></textarea>
+
+                                </select>
+                            </div>
                         </div>
+
+                        <div class="row mg-t-20">
+                            <label class="col-sm-4 form-control-label">Descripción <span class="tx-danger"></span></label>
+                            <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                                <textarea rows="2" id="descripcion" class="form-control" placeholder="Descripción"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-layout-footer mg-t-30">
+                            <button type="submit" id="btningresar" class="btn btn-info">Agregar</button>
+
+                        </div>
+                        <!-- form-layout-footer -->
                     </div>
-                    <div class="form-layout-footer mg-t-30">
-                        <button type="submit" class="btn btn-info">Submit Form</button>
-                      
-                    </div>
-                    <!-- form-layout-footer -->
+                    <!-- form-layout -->
                 </div>
-                <!-- form-layout -->
-            </div>
 
-
+            </form>
 
         </div>
     </div>

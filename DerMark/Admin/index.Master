@@ -19,7 +19,8 @@
     <!--js-->
     <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../Scripts/jquery-3.3.1.js"></script>
-    
+
+    <script src="Ajax/productos_Ingredientes.js"></script>
     <script src="Ajax/admin.js"></script>
     <script src="Ajax/ingredientes.js"></script>
     <script src="Ajax/index.js"></script>
@@ -118,7 +119,7 @@
     <div class="br-mainpanel">
 
       
-            <form class="needs-validation" novalidate id="form1" method="post" onsubmit="return enviar()"  >
+         
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>

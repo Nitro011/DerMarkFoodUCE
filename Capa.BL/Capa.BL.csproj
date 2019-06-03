@@ -45,6 +45,7 @@
     <Compile Include="Clientes_BL.cs" />
     <Compile Include="Empleado_BL.cs" />
     <Compile Include="InformacionUsuario_BL.cs" />
+    <Compile Include="Producto_Ingrediente_BL.cs" />
     <Compile Include="LlenarDropDown_BL.cs" />
     <Compile Include="ObtenerID_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

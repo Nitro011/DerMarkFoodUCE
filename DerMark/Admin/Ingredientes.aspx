@@ -111,9 +111,9 @@
                  
                 <h6 class="br-section-label">Ingredientes</h6>
                 
-                
+              
                 <div class="table-wrapper">
-                    <button class="btn btn-success active btn-block mg-b-10">Añadir</button>
+                    <a href="RegistrarIngredientes.aspx" class="btn btn-success active btn-block mg-b-10">Agregar</a>
                 
                     <table id="datatable1" class="table display responsive nowrap">
                            

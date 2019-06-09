@@ -16,7 +16,10 @@ namespace Capa.BL
         {
             return db.insertar(pe);
         }
-
+        public object Obtener_ingedientes()
+        {
+            return db.obt_ingredientes();
+        }
 
 
     }

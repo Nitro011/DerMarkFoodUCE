@@ -16,6 +16,8 @@
 
     <title>DerMark Admin</title>
 
+ 
+
     <!--js-->
     <script src="../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../Scripts/jquery-3.3.1.js"></script>
@@ -26,22 +28,22 @@
     <script src="Ajax/index.js"></script>
     <script src="Ajax/empleado.js"></script>
     <!-- Bracket CSS -->
-    
+
     <!-- vendor css -->
-   
+
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-     <link href="lib/highlightjs/styles/github.css" rel="stylesheet" />
+    <link href="lib/highlightjs/styles/github.css" rel="stylesheet" />
     <link href="lib/select2/css/select2.min.css" rel="stylesheet" />
-     <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
 
 
 
     <link rel="stylesheet" href="css/bracket.css">
 </head>
-<body >
+<body>
 
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="br-logo"><a href=""><span>[</span>DerMark <i>Food</i><span>]</span></a></div>
@@ -76,14 +78,14 @@
                     <li class="sub-item"><a href="card-social.html" class="sub-link">Consultar</a></li>
                 </ul>
             </li>
-             <li class="br-menu-item">
+            <li class="br-menu-item">
                 <a href="#" class="br-menu-link with-sub">
                     <i class="menu-item-icon ion-coffee tx-20"></i>
                     <span class="menu-item-label">Productos</span>
                 </a>
                 <!-- br-menu-link -->
                 <ul class="br-menu-sub">
-                 
+
                     <li class="sub-item"><a href="Ingredientes.aspx" class="sub-link">Ingredientes</a></li>
 
                     <li class="sub-item"><a href="card-social.html" class="sub-link">Consumibles</a></li>
@@ -106,10 +108,106 @@
 
 
     <!-- ########## START: HEAD PANEL ########## -->
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-        </asp:ContentPlaceHolder>
+
+
+
+
+    <div class="br-header">
+        <div class="br-header-left">
+            <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i class="icon ion-navicon-round"></i></a></div>
+            <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i class="icon ion-navicon-round"></i></a></div>
+
+        </div>
+        <!-- br-header-left -->
+        <div class="br-header-right">
+            <nav class="nav">
+                <div class="dropdown">
+                    <%-- <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+                        <i class="icon ion-ios-email-outline tx-24"></i>
+                        <!-- start: if statement -->
+                        <span class="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
+                        <!-- end: if statement -->
+                    </a>--%>
+                    <div class="dropdown-menu dropdown-menu-header">
+                        <div class="dropdown-menu-label">
+                            <label>Messages</label>
+
+                        </div>
+                        <!-- d-flex -->
+
+                        <div class="media-list">
+                            <!-- loop starts here -->
+                            <a href="" class="media-list-link">
+                                <div class="media">
+                                    <img src="https://via.placeholder.com/500" alt="">
+                                    <div class="media-body">
+                                        <div>
+                                            <p>Donna Seay</p>
+                                            <span>2 minutes ago</span>
+                                        </div>
+                                        <!-- d-flex -->
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
+                                    </div>
+                                </div>
+                                <!-- media -->
+                            </a>
+                            <!-- loop ends here -->
+
+                            <div class="dropdown-footer">
+                                <a href=""><i class="fa fa-angle-down"></i>Show All Messages</a>
+                            </div>
+                        </div>
+                        <!-- media-list -->
+                    </div>
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+
+                        <!--nombre usuario-->
+                        <span class="logged-name hidden-md-down" id="username"></span>
+
+
+                        <img src="https://via.placeholder.com/500" class="wd-32 rounded-circle" alt="">
+                        <%--<span class="square-10 bg-success"></span>--%>
+                        <!--Verde de activo-->
+                    </a>
+
+
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href="">
+                                <img src="https://via.placeholder.com/500" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname" id="namefull" >Katherine P. Lumaad</h6>
+                            <p id="email">youremail@domain.com</p>
+                        </div>
+                        <!-- Linea-->
+                        <%--<hr>
+
+                        <hr>--%>
+                        <ul class="list-unstyled user-profile-nav">
+                            <%--<li><a href=""><i class="icon ion-ios-person"></i>Edit Profile</a></li>
+                            <li><a href=""><i class="icon ion-ios-gear"></i>Settings</a></li>
+                            <li><a href=""><i class="icon ion-ios-download"></i>Downloads</a></li>
+                            <li><a href=""><i class="icon ion-ios-star"></i>Favorites</a></li>
+                            <li><a href=""><i class="icon ion-ios-folder"></i>Collections</a></li>--%>
+                            <li><a href="" id="btnexit"><i class="icon ion-power"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+            </nav>
+
+        </div>
+        <!-- br-header-right -->
     </div>
+
 
     <!-- br-header -->
     <!-- ########## END: HEAD PANEL ########## -->
@@ -117,20 +215,30 @@
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
+        <form class="needs-validation" novalidate id="form1" method="post" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-      
-         
+            <div>
 
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
 
-            </form>
-        
-        <!-- d-flex -->
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
 
-      
-        <!-- br-pagebody -->
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+
+            </div>
+
+            <!-- d-flex -->
+
+
+            <!-- br-pagebody -->
+        </form>
     </div>
+
     <!-- br-mainpanel -->
 
 
@@ -143,10 +251,10 @@
     <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="lib/moment/min/moment.min.js"></script>
     <script src="lib/peity/jquery.peity.min.js"></script>
-     
+
 
     <!--Datatable-->
-    
+
     <script src="lib/highlightjs/highlight.pack.min.js"></script>
     <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
@@ -156,16 +264,16 @@
 
 
     <!--end datatable-->
-     <script src="../jquery.mask.min.js"></script>
+    <script src="../jquery.mask.min.js"></script>
 
     <script src="js/bracket.js"></script>
-    
 
 
 
 
 
-    
+
+
 
 </body>
 </html>

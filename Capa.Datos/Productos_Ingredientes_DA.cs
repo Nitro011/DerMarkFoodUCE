@@ -12,10 +12,10 @@ namespace Capa.Datos
    public class Productos_Ingredientes_DA
     {
 
+        string cnSTR = "data source=.;initial catalog=DerMark;user id = admin;password = 123456789";
+
         public object insertar(Productos_Ingredientes_E pe)
         {
-
-            string cnSTR = "data source=.;initial catalog=DerMark;user id = admin;password = 123456789";
 
             using (SqlConnection cn = new SqlConnection(cnSTR))
             {
@@ -39,7 +39,41 @@ namespace Capa.Datos
         }
 
 
+        public List<Productos_Ingredientes_E> obt_ingredientes()
+        {
+            List<Productos_Ingredientes_E> ingredientes = new List<Productos_Ingredientes_E>();
 
+
+
+            using (SqlConnection cn = new SqlConnection(cnSTR))
+            {
+                cn.Open();
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = "ObtenerIngrediente";
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Productos_Ingredientes_E obj = new Productos_Ingredientes_E();
+
+                    
+                    obj.nombres_productos = reader["productos"].ToString();
+                    obj.cantidad = Convert.ToInt32(reader["cantidad"].ToString());
+                    obj.unidad_de_medida = Convert.ToDecimal(reader["unidad_de_medida"].ToString());
+                    obj.descripcion = reader["descripcion"].ToString();
+                    obj.estado = reader["estados"].ToString();
+                    ingredientes.Add(obj);
+                }
+
+
+
+                return ingredientes;
+
+            }
+
+        }
 
     }
 }

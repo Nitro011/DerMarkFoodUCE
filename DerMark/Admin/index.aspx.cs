@@ -12,10 +12,12 @@ namespace DerMark.Admin
 {
     public partial class index1 : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+         
 
-            
+
         }
 
         [WebMethod]
@@ -25,7 +27,18 @@ namespace DerMark.Admin
             InformacionUsuario_BL ibl = new InformacionUsuario_BL();
 
 
-            ie.correoelectronico = HttpContext.Current.Session["email"].ToString();
+
+
+            if (HttpContext.Current.Session["email"].ToString() != null)
+            {
+                ie.correoelectronico = HttpContext.Current.Session["email"].ToString();
+            }
+
+            else
+            {
+                HttpContext.Current.Response.Redirect("../Pagina_Presentacion/Pagina_Presentacion.aspx");
+            }
+            
 
             return ibl.Obtener_Informacion(ie);
           
@@ -36,10 +49,25 @@ namespace DerMark.Admin
         [WebMethod]
         public static int Exit()
         {
-
+            HttpContext.Current.Session.Clear();
             HttpContext.Current.Session.Abandon();
             return 1;
 
+        }
+
+        [WebMethod()]
+        public static bool KeepActiveSession()
+        {
+            if (HttpContext.Current.Session["email"] != null)
+                return true;
+            else
+                return false;
+        }
+
+        [WebMethod()]
+        public static void SessionAbandon()
+        {
+            HttpContext.Current.Session.Remove("email");
         }
 
 

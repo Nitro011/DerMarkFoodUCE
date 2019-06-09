@@ -43,22 +43,25 @@
                         <a class="p-2 text-white" href="../../Pagina_Presentacion/Pagina_Presentacion.aspx">Pag.Principal</a>
                     </li>
                     <li class="nav-item">
-              <%--          <a class="p-2 text-white" href="#">Buscar Food</a>--%>
+                        <%--          <a class="p-2 text-white" href="#">Buscar Food</a>--%>
                     </li>
                     <li class="nav-item">
                         <a class="p-2 text-white" href="../OpcMem/OpcioneMembers.aspx">Registrarse</a>
                     </li>
                 </ul>
-              
+
             </nav>
-            
+
         </div>
         <!--header ends-->
 
 
         <!--Formulario-->
         <form class="form-signin" id="form1" method="post" onsubmit="return enviar()">
+            <div id="alerta">
+                </div>
             <div>
+                
                 <div class="text-center mb-4">
                     <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
                     <h1 class="h3 mb-3 font-weight-normal">DerMark Food</h1>
@@ -192,7 +195,7 @@
                         }
                         else {
 
-                            $("#alerta").html('<div class="alert alert-danger" role="alert"> La informacion que introdujiste no existe en nuestros registros </div>');
+                            $("#alerta").html('<div class="alert alert-danger" role="alert"> La informacion que se introdujo no existe en nuestros registros </div>');
 
                         }
 

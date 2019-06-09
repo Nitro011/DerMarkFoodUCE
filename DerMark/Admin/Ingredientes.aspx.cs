@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Web.UI;
+using Capa.Entidad;
+using Capa.BL;
 
 namespace DerMark.Admin
 {
@@ -14,6 +16,19 @@ namespace DerMark.Admin
         {
 
         }
-       
+
+        [WebMethod]
+        public static object ObtenerIngredientes()
+        {
+
+            Producto_Ingrediente_BL pi = new Producto_Ingrediente_BL();
+
+
+            return pi.Obtener_ingedientes(); ;
+
+
+
+        }
+
     }
 }

@@ -14,7 +14,7 @@ namespace Capa.Entidad
         public int cantidad { get; set; }
         public decimal unidad_de_medida { get; set; }
         public string descripcion { get; set; }
-      
+        public string estado { get; set; }
 
 
 

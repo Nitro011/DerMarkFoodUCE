@@ -75,7 +75,8 @@ function enviar() {
     var establecimiento = $('#esta').val();
     var tipo_empleado = $('#te').val();
     var direccion1 = $('#direccion').val();
-
+    var sueldoV = $('#sueldo').val();
+    var fnV = $('#fn').val();
 
     if (nombre == "") {
 
@@ -149,7 +150,7 @@ function enviar() {
 
     else {
 
-        var value = { ciudadID: ciudad, nacionalidadID: nacionalidad, nombre: nombre, apellido: apellido, descripcion: descripcion, celular: celular, contraseña: contraseña, correo_electronico: email, establecimiento: establecimiento, tipoempleado: tipo_empleado, direccionEmple: direccion1 };
+        var value = { ciudadID: ciudad, nacionalidadID: nacionalidad, nombre: nombre, apellido: apellido, descripcion: descripcion, celular: celular, contraseña: contraseña, correo_electronico: email, establecimiento: establecimiento, tipoempleado: tipo_empleado, direccionEmple: direccion1, fnN:fnV, sueldo: sueldoV };
 
 
         $.ajax({

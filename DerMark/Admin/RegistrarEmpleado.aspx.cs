@@ -18,7 +18,7 @@ namespace DerMark.Admin
         }
 
         [WebMethod]
-        public static object insertar(string ciudadID, string nacionalidadID, string nombre, string apellido, string descripcion, string celular, string contraseña, string correo_electronico,string establecimiento,string tipoempleado,string direccionEmple)
+        public static object insertar(string ciudadID, string nacionalidadID, string nombre, string apellido, string descripcion, string celular, string contraseña, string correo_electronico,string establecimiento,string tipoempleado,string direccionEmple,string fnN,string sueldo)
         {
 
             Empleado_BL bc = new Empleado_BL();
@@ -34,6 +34,9 @@ namespace DerMark.Admin
          
             int establecimiento1 = Convert.ToInt32(establecimiento);
             int tipoempleado1 = Convert.ToInt32(tipoempleado);
+
+            decimal sueld = Convert.ToDecimal(sueldo);
+            DateTime fechaN = Convert.ToDateTime(fnN);
           
           
 
@@ -49,7 +52,8 @@ namespace DerMark.Admin
             ee.establecimiento = establecimiento1;
             ee.tipoempleado = tipoempleado1;
             ee.direccion = direccionEmple;
-
+            ee.sueldo = sueld;
+            ee.fecha_de_nacimiento = fechaN;
           
 
 

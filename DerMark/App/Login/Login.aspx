@@ -75,10 +75,9 @@
       <div class="form-label-group">
           <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="required" />
       </div>
-
+                <br>
                 <div class="checkbox mb-3">
-                    <label>
-                    </label>
+                    <a href="#" >¿Olvidaste tu contraseña?</a>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" id="btnlogin" type="submit">Ingresar</button>
             </div>

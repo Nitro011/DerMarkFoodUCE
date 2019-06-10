@@ -77,6 +77,84 @@
                     <div id="alerta">
                             </div>
                     <form class="needs-validation" novalidate="novalidate" id="form1" method="post" onsubmit="return enviar()">
+
+                           <div class="row">
+                            <div class="col-md-12">
+
+                                <h2>Información de tu negocio </h2>
+                                <div class="widget">
+                                    <div class="widget-body">
+
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleFormControlSelect1">Seleccionar ciudad<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <select class="form-control" id="ciudaddeb" required="required">
+                                                    <option value="">Seleccionar </option>
+
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleFormControlSelect1">Seleccionar pais<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <select class="form-control" id="paisdeb" required="required">
+                                                    <option value="">Seleccionar </option>
+
+
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleInputEmail1">Nombre de la empresa<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <input class="form-control" type="text" id="nombredeb" placeholder="Nombre de la empresa" runat="server" required="required" />
+                                               
+                                            </div>
+
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleInputEmail1">Correo electronico<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <input class="form-control" type="email" id="emailempresa" placeholder="Correo electronico" required="required" />
+                                               
+                                                <small class="form-text text-muted"></small>
+                                            </div>
+
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleInputEmail1">RNC<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <input class="form-control" type="text" name="rnc" id="RNC" placeholder="RNC" required="required" />
+                                                
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleInputEmail1">Teléfono<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <input class="form-control" type="text" name="telem" id="celularempresa" placeholder="Teléfono" required="required" />
+                                                
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="exampleTextarea">Dirección<abbr title="Este campo es obligatorio">*</abbr></label>
+                                                <textarea class="form-control" id="direccindeb" rows="3" required="required"></textarea>
+                                               
+                                            </div>
+
+
+
+
+                                            <div class="form-group col-sm-12">
+                                                <label for="exampleTextarea">Descripción</label>
+                                                <textarea class="form-control" id="descripciondeb" rows="3"></textarea>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end: Widget -->
+                            </div>
+                        </div>
+
+
+
+
+
+
+
                         <div class="row">
                             <!-- REGISTER -->
                             
@@ -167,77 +245,7 @@
                                 <!-- end: Widget -->
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <h2>Información de tu negocio </h2>
-                                <div class="widget">
-                                    <div class="widget-body">
-
-                                        <div class="row">
-
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleFormControlSelect1">Seleccionar ciudad<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <select class="form-control" id="ciudaddeb" required="required">
-                                                    <option value="">Seleccionar </option>
-
-
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleFormControlSelect1">Seleccionar pais<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <select class="form-control" id="paisdeb" required="required">
-                                                    <option value="">Seleccionar </option>
-
-
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleInputEmail1">Nombre de la empresa<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <input class="form-control" type="text" id="nombredeb" placeholder="Nombre de la empresa" runat="server" required="required" />
-                                               
-                                            </div>
-
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleInputEmail1">Correo electronico<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <input class="form-control" type="email" id="emailempresa" placeholder="Correo electronico" required="required" />
-                                               
-                                                <small class="form-text text-muted"></small>
-                                            </div>
-
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleInputEmail1">RNC<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <input class="form-control" type="text" name="rnc" id="RNC" placeholder="RNC" required="required" />
-                                                
-                                            </div>
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleInputEmail1">Teléfono<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <input class="form-control" type="text" name="telem" id="celularempresa" placeholder="Teléfono" required="required" />
-                                                
-                                            </div>
-                                            <div class="form-group col-sm-6">
-                                                <label for="exampleTextarea">Dirección<abbr title="Este campo es obligatorio">*</abbr></label>
-                                                <textarea class="form-control" id="direccindeb" rows="3" required="required"></textarea>
-                                               
-                                            </div>
-
-
-
-
-                                            <div class="form-group col-sm-12">
-                                                <label for="exampleTextarea">Descripción</label>
-                                                <textarea class="form-control" id="descripciondeb" rows="3"></textarea>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- end: Widget -->
-                            </div>
-                        </div>
-
+                     
 
                         <div class="row">
                             <div class="col-md-12">

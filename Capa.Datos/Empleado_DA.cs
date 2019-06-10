@@ -32,6 +32,9 @@ namespace Capa.Datos
                 cmd.Parameters.AddWithValue("@tipoempleado", ee.tipoempleado);
                 cmd.Parameters.AddWithValue("@direccion", ee.direccion);
 
+                cmd.Parameters.AddWithValue("@fn", ee.fecha_de_nacimiento);
+                cmd.Parameters.AddWithValue("@sueldo", ee.sueldo);
+
 
 
                 cmd.Parameters.AddWithValue("@contraseña", ee.contraseña);

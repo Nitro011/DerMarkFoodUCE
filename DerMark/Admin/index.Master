@@ -28,7 +28,7 @@
     <script src="Ajax/admin.js"></script>
     <script src="Ajax/ingredientes.js"></script>
     <script src="Ajax/index.js"></script>
-    <script src="Ajax/empleado.js"></script>
+
     <!-- Bracket CSS -->
 
     <!-- vendor css -->

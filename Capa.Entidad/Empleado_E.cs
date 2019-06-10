@@ -22,5 +22,6 @@ namespace Capa.Entidad
         public int establecimiento { get; set; }
         public int tipoempleado { get; set; }
     public string direccion { get; set; }
+        public decimal sueldo { get; set; }
     }
 }

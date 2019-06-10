@@ -6,6 +6,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+        <script src="Ajax/empleado.js"></script>
+
 
     <div id="alerta">
     </div>
@@ -69,6 +71,26 @@
                                     Telefono:<abbr title="Este campo es obligatorio">*</abbr>
                                 </label>
                                 <input class="form-control" type="text" id="telefono" name="tel" placeholder="Telefono" required="required">
+                            </div>
+                        </div>
+                        <!-- col-4 -->
+                          <!-- col-4 -->
+                        <div class="col-lg-4">
+                            <div class="form-group ">
+                                <label class="form-control-label">
+                                    Fecha de nacimiento:<abbr title="Este campo es obligatorio">*</abbr>
+                                </label>
+                                <input class="form-control" type="date" id="fn"  required="required">
+                            </div>
+                        </div>
+                        <!-- col-4 -->
+                          <!-- col-4 -->
+                        <div class="col-lg-4">
+                            <div class="form-group ">
+                                <label class="form-control-label">
+                                    sueldo:<abbr title="Este campo es obligatorio">*</abbr>
+                                </label>
+                                <input class="form-control" type="text" id="sueldo" placeholder="Sueldo" required="required">
                             </div>
                         </div>
                         <!-- col-4 -->

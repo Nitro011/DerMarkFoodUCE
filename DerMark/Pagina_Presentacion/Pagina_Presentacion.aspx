@@ -51,10 +51,10 @@
         </div>
         <!--header ends-->
         <!-- banner part starts -->
-        <div class="jumbotron">
+       <%-- <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">DerkMark Food</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                <h1 class="display-3">DerMark Food</h1>
+             
 
 
                 <div class="input-group mb-3">
@@ -72,7 +72,7 @@
 
 
             </div>
-        </div>
+        </div>--%>
         <!--end:Hero inner -->
 
         <!-- banner part ends -->
@@ -84,7 +84,7 @@
         </div>--%>
         <!-- location match part ends -->
         <!-- Popular block starts -->
-        <%-- <section class="popular">
+     <%--    <section class="popular">
             <div class="container">
                 <div class="title text-xs-center m-b-30">
                     <h2>Popular This Month In Your City</h2>
@@ -171,7 +171,7 @@
         </section>--%>
         <!-- Popular block ends -->
         <!-- How it works block starts -->
-        <%--  <section class="how-it-works">
+      <%--    <section class="how-it-works">
             <div class="container">
                 <div class="text-xs-center">
                     <h2>Easy 3 Step Order</h2>
@@ -475,7 +475,10 @@
             </div>
         </section>--%>
         <!-- Featured restaurants ends -->
-        <section class="app-section">
+
+
+        <!--ultima imagen-->
+       <%-- <section class="app-section">
             <div class="app-wrap">
                 <div class="container">
                     <div class="row text-img-block text-xs-left">
@@ -503,7 +506,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
         <!-- start: FOOTER -->
         <%--  <footer class="footer">
             <div class="container">

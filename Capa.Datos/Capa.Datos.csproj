@@ -47,8 +47,10 @@
     <Compile Include="InformacionUsuario_DA.cs" />
     <Compile Include="Llenar DropDown\LlenarDropDown_DA.cs" />
     <Compile Include="ObtenerID_DA.cs" />
+    <Compile Include="Productos_DA.cs" />
     <Compile Include="Productos_Ingredientes_DA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoProducto_DA.cs" />
     <Compile Include="Usuarios_DA.cs" />
   </ItemGroup>
   <ItemGroup>

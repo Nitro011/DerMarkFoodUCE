@@ -50,9 +50,11 @@
     <Compile Include="Nacionalidad_E.cs" />
     <Compile Include="ObtenerId_E.cs" />
     <Compile Include="Pais_E.cs" />
+    <Compile Include="Productos_E.cs" />
     <Compile Include="Productos_Ingredientes_E.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tipoempleado_E.cs" />
+    <Compile Include="TipoProducto_E.cs" />
     <Compile Include="Usuarios_E.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

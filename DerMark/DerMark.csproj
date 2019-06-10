@@ -111,7 +111,10 @@
     <Content Include="Admin\Ajax\empleado.js" />
     <Content Include="Admin\Ajax\index.js" />
     <Content Include="Admin\Ajax\ingredientes.js" />
+    <Content Include="Admin\Ajax\plato.js" />
+    <Content Include="Admin\Ajax\productos.js" />
     <Content Include="Admin\Ajax\productos_Ingredientes.js" />
+    <Content Include="Admin\Ajax\tipo_producto.js" />
     <Content Include="Admin\CssModificado\Ingredientes.css" />
     <Content Include="Admin\css\bracket.css" />
     <Content Include="Admin\css\bracket.dark.css" />
@@ -3673,9 +3676,13 @@
     <Content Include="Admin\lib\summernote\summernote.min.js" />
     <Content Include="Admin\lib\timepicker\jquery.timepicker.css" />
     <Content Include="Admin\lib\timepicker\jquery.timepicker.min.js" />
+    <Content Include="Admin\Productos.aspx" />
     <Content Include="Admin\RegistrarEmpleado.aspx" />
     <Content Include="Admin\RegistrarIngredientes.aspx" />
+    <Content Include="Admin\RegistrarPlato.aspx" />
+    <Content Include="Admin\RegistrarProducto.aspx" />
     <Content Include="Admin\RegistroAdmin.aspx" />
+    <Content Include="Admin\TipoProducto.aspx" />
     <Content Include="App\Login\css\animate.css" />
     <Content Include="App\Login\css\animate.min.css" />
     <Content Include="App\Login\css\animsition.min.css" />
@@ -4148,6 +4155,13 @@
     <Compile Include="Admin\Ingredientes.aspx.designer.cs">
       <DependentUpon>Ingredientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\RegistrarEmpleado.aspx.cs">
       <DependentUpon>RegistrarEmpleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4162,12 +4176,33 @@
     <Compile Include="Admin\RegistrarIngredientes.aspx.designer.cs">
       <DependentUpon>RegistrarIngredientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\RegistrarPlato.aspx.cs">
+      <DependentUpon>RegistrarPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RegistrarPlato.aspx.designer.cs">
+      <DependentUpon>RegistrarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RegistrarProducto.aspx.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RegistrarProducto.aspx.designer.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\RegistroAdmin.aspx.cs">
       <DependentUpon>RegistroAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\RegistroAdmin.aspx.designer.cs">
       <DependentUpon>RegistroAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TipoProducto.aspx.cs">
+      <DependentUpon>TipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TipoProducto.aspx.designer.cs">
+      <DependentUpon>TipoProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

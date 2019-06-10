@@ -19,9 +19,11 @@
  
 
     <!--js-->
-    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+
     <script src="../Scripts/jquery-3.3.1.js"></script>
 
+    <script src="Ajax/productos.js"></script>
+    <script src="Ajax/tipo_producto.js"></script>
     <script src="Ajax/productos_Ingredientes.js"></script>
     <script src="Ajax/admin.js"></script>
     <script src="Ajax/ingredientes.js"></script>
@@ -46,12 +48,12 @@
 <body>
 
     <!-- ########## START: LEFT PANEL ########## -->
-    <div class="br-logo"><a href=""><span>[</span>DerMark <i>Food</i><span>]</span></a></div>
+    <div class="br-logo"><a href="index.aspx"><span>[</span>DerMark <i>Food</i><span>]</span></a></div>
     <div class="br-sideleft sideleft-scrollbar">
         <label class="sidebar-label pd-x-10 mg-t-20 op-3">Menu</label>
         <ul class="br-sideleft-menu">
             <li class="br-menu-item">
-                <a href="index.html" class="br-menu-link">
+                <a href="index.aspx" class="br-menu-link">
                     <i class="menu-item-icon icon ion-ios-home-outline tx-24"></i>
                     <span class="menu-item-label">Pagina principal</span>
                 </a>
@@ -75,7 +77,7 @@
                 <ul class="br-menu-sub">
 
                     <li class="sub-item"><a href="RegistrarEmpleado.aspx" class="sub-link">Registrar</a></li>
-                    <li class="sub-item"><a href="card-social.html" class="sub-link">Consultar</a></li>
+                 
                 </ul>
             </li>
             <li class="br-menu-item">
@@ -85,10 +87,30 @@
                 </a>
                 <!-- br-menu-link -->
                 <ul class="br-menu-sub">
-
+                     
+                   
                     <li class="sub-item"><a href="Ingredientes.aspx" class="sub-link">Ingredientes</a></li>
 
-                    <li class="sub-item"><a href="card-social.html" class="sub-link">Consumibles</a></li>
+                    <li class="sub-item"><a href="Productos.aspx" class="sub-link">Productos</a></li>
+                  
+                     <li class="sub-item"><a href="TipoProducto.aspx" class="sub-link">Categoria</a></li>
+                </ul>
+            </li>
+
+              <li class="br-menu-item">
+                <a href="#" class="br-menu-link with-sub">
+                    <i class="menu-item-icon ion-spoon tx-20"></i>
+                    <span class="menu-item-label">Platos</span>
+                </a>
+                <!-- br-menu-link -->
+                <ul class="br-menu-sub">
+                   
+                   
+                    <li class="sub-item"><a href="RegistrarPlato.aspx" class="sub-link">Crear</a></li>
+
+                    <%--<li class="sub-item"><a href="Productos.aspx" class="sub-link">Consultar</a></li>--%>
+                  
+                  
                 </ul>
             </li>
 

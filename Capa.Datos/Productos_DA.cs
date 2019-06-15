@@ -19,14 +19,16 @@ namespace Capa.Datos
             {
                 cn.Open();
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = "InsertarProductos";
+                cmd.CommandText = "insertar_Productos";
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id_tipo_producto", pro.tipo_producto);
-                cmd.Parameters.AddWithValue("@nombre_producto", pro.nombre_producto);
+               
+                cmd.Parameters.AddWithValue("@nombre_producto", pro.nombres_productos);
                 cmd.Parameters.AddWithValue("@descripcion", pro.descripcion);
                 cmd.Parameters.AddWithValue("@cantidad", pro.cantidad);
-                cmd.Parameters.AddWithValue("@precio",pro.precio);
+                cmd.Parameters.AddWithValue("@precio_venta", pro.precio_ventas);
+                cmd.Parameters.AddWithValue("@costo", pro.costo);
+                cmd.Parameters.AddWithValue("@unidad_de_medida", pro.unidad_de_medida);
 
 
                 return cmd.ExecuteScalar();
@@ -38,7 +40,7 @@ namespace Capa.Datos
 
         public List<Productos_E> obt_producto()
         {
-            List<Productos_E> Producto = new List<Productos_E>();
+            List<Productos_E> producto = new List<Productos_E>();
 
 
 
@@ -46,7 +48,7 @@ namespace Capa.Datos
             {
                 cn.Open();
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = "ObtenerProducto";
+                cmd.CommandText = "consultar_almacen_producto";
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
 
@@ -55,23 +57,23 @@ namespace Capa.Datos
                 {
                     Productos_E obj = new Productos_E();
 
-                    obj.id = Convert.ToInt32(reader["productoID"].ToString());
-                    obj.tip_Producto = reader["tipo_de_productos"].ToString();
-                    obj.nombre_producto = reader["nombre_producto"].ToString();
-                    obj.descripcion = reader["descripcion"].ToString();
-                    obj.cantidad = Convert.ToInt32(reader["cantidad"].ToString());
-                    obj.precio = Convert.ToDecimal(reader["precio"].ToString());
 
-                    Producto.Add(obj);
+                    obj.nombres_productos = reader["nombre_producto"].ToString();
+                    obj.cantidad = Convert.ToInt32(reader["cantidad"].ToString());
+                    obj.unidadMedidastr = reader["unidad_de_medida"].ToString();
+                    obj.costo = Convert.ToDecimal(reader["costo"].ToString());
+                    obj.precio_ventas = Convert.ToDecimal(reader["precio_venta"].ToString());
+                    obj.descripcion = reader["descripcion"].ToString();
+                    obj.estado = reader["estados"].ToString();
+                    producto.Add(obj);
                 }
 
 
 
-                return Producto;
+                return producto;
 
             }
 
         }
-
     }
 }

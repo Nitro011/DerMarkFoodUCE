@@ -22,11 +22,10 @@
 
     <script src="../Scripts/jquery-3.3.1.js"></script>
 
-    <script src="Ajax/productos.js"></script>
-    <script src="Ajax/tipo_producto.js"></script>
-    <script src="Ajax/productos_Ingredientes.js"></script>
-    <script src="Ajax/admin.js"></script>
-    <script src="Ajax/ingredientes.js"></script>
+ 
+  
+
+   
     <script src="Ajax/index.js"></script>
 
     <!-- Bracket CSS -->
@@ -93,7 +92,7 @@
 
                     <li class="sub-item"><a href="Productos.aspx" class="sub-link">Productos</a></li>
                   
-                     <li class="sub-item"><a href="TipoProducto.aspx" class="sub-link">Categoria</a></li>
+               <%--      <li class="sub-item"><a href="TipoProducto.aspx" class="sub-link">Categoria</a></li>--%>
                 </ul>
             </li>
 

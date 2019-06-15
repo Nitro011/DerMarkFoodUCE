@@ -233,6 +233,41 @@ namespace Capa.Datos.Llenar_DropDown
           
 
         }
+        public List<Unidad_De_Medida_E> obtenerUnidadDeMedida()
+        {
+
+
+            List<Unidad_De_Medida_E> obtenerUnidadDeMedidal = new List<Unidad_De_Medida_E>();
+
+
+
+            using (SqlConnection cn = new SqlConnection(cnSTR))
+            {
+                cn.Open();
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = "ObtenerUnidadDeMedida";
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+             
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Unidad_De_Medida_E obj = new Unidad_De_Medida_E();
+
+                    obj.id = Convert.ToInt32(reader["unidad_de_medidaId"].ToString());
+                    obj.unidad_de_medida = reader["unidad_de_medida"].ToString();
+
+                    obtenerUnidadDeMedidal.Add(obj);
+                }
+
+                return obtenerUnidadDeMedidal;
+
+            }
+
+
+
+
+        }
 
 
 

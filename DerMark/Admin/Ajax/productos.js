@@ -3,7 +3,7 @@
 });
 
 
-//Llenar ingredientes
+
 
 function ObtenerProducto() {
 
@@ -30,13 +30,14 @@ function ObtenerProducto() {
                 data: data.d,
 
                 columns: [
-                    { 'data': 'id' },
-                    { 'data': 'tip_Producto' },
-                    { 'data': 'nombre_producto' },
-                    { 'data': 'descripcion' },
+                    { 'data': 'nombres_productos' },
                     { 'data': 'cantidad' },
-                    { 'data': 'precio' }
-              
+                    { 'data': 'unidadMedidastr' },
+                    { 'data': 'costo' },
+                    { 'data': 'precio_ventas' },
+                    { 'data': 'descripcion' },
+                    { 'data': 'estado' }
+
 
 
 
@@ -55,30 +56,7 @@ function ObtenerProducto() {
 };
 
 
-//obtener tipo de empleado
-$(document).ready(function () {
 
-    $.ajax({
-        url: 'RegistrarProducto.aspx/ObtenerCategoria',
-      
-        method: 'post',
-        contentType: "application/json",
-        dataType: "json",
-        success: function (data) {
-            $.each(data.d, function (i, value) {
-
-
-                $("#dropcategoria").append("<option value=" + value.id + ">" + value.tipo_producto + "</option>");
-            });
-
-
-        },
-        error: function (err) {
-            alert(err);
-        }
-    });
-
-});
 
 
 
@@ -106,78 +84,92 @@ $(document).ready(function () {
 function registrar_producto() {
 
     var nombre_productov = $('#np').val();
-    var categoriav = $('#dropcategoria').val();
     var cantidadv = $('#cantidadU').val();
-    var preciov = $('#pre').val();
-    var descripcionv = $('#descripcion').val();
-
-
+    var unidad_de_medidav = $('#unidad_medida').val();
+    var costov = $('#cost').val();
+    var precio_ventav = $('#pre').val();
+    var descripciov = $('#descripcion').val();
 
     if (nombre_productov == "") {
-
         $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
-
     }
-    if (categoriav == "") {
-
+    else if (cantidadv == "") {
         $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
-
     }
-
-    if (cantidadv == "") {
-
+    else if (unidad_de_medidav == "") {
         $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
-
     }
-
-    if (preciov == "") {
-
+    else if (costov == "") {
         $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
-
     }
-
-
-
-
-
-
-
-
+    else if (precio_ventav == "") {
+        $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
+    }
     else {
 
-        var value = { nombreProducto: nombre_productov, categoria: categoriav, cantidad: cantidadv, precio: preciov, descripcion: descripcionv };
 
 
-        $.ajax({
-            url: 'RegistrarProducto.aspx/insertar',
-            method: 'post',
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify(value),
-            dataType: "json",
-            success: function (data) {
-                if (data.d == 1) {
+    var value = { nombreProducto: nombre_productov, cantidad: cantidadv, unidad_de_medida: unidad_de_medidav, descripcion: descripciov, costo: costov, precio_ventas: precio_ventav };
 
 
-                    $("#alerta").html('<div class="alert alert-danger" role="alert"> La informacion que introdujiste existe en nuestros registros </div>');
-                }
-                else {
-
-                    $("#alerta").html('<div class="alert alert-success" role="alert"> La informacion que introdujiste se registro correctamente </div>');
-
-                    location.href = "Productos.aspx";
-
-                }
 
 
-            },
-            error: function (err) {
-                alert(err);
+    $.ajax({
+        url: 'RegistrarProducto.aspx/insertar',
+        method: 'post',
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(value),
+        dataType: "json",
+        success: function (data) {
+            if (data.d == 1) {
+
+
+                $("#alerta").html('<div class="alert alert-danger" role="alert"> La informacion que introdujiste existe en nuestros registros </div>');
+            }
+            else {
+
+                $("#alerta").html('<div class="alert alert-success" role="alert"> La informacion que introdujiste se registro correctamente </div>');
+
+                location.href = "Productos.aspx";
+
             }
 
-        });
+
+        },
+        error: function (err) {
+            alert(err);
+        }
+       
+    });
+    
     }
- 
     return false;
 }
 
 
+
+
+
+//obtener tipo de empleado
+$(document).ready(function () {
+
+    $.ajax({
+        url: 'RegistrarProducto.aspx/llenarUnidadDeMedida',
+        method: 'post',
+        contentType: "application/json",
+        dataType: "json",
+        success: function (data) {
+            $.each(data.d, function (i, value) {
+
+
+                $("#unidad_medida").append("<option value=" + value.id + ">" + value.unidad_de_medida + "</option>");
+            });
+
+
+        },
+        error: function (err) {
+            alert(err);
+        }
+    });
+
+});

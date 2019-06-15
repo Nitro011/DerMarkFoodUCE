@@ -30,7 +30,9 @@ $(function () {
                     columns: [
                         { 'data': 'nombres_productos' },
                         { 'data': 'cantidad' },
-                        { 'data': 'unidad_de_medida' },
+                        { 'data': 'unidadMedidastr' },
+                        { 'data': 'costo' },
+                    
                         { 'data': 'descripcion' },
                         { 'data': 'estado' }
                             

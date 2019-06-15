@@ -34,6 +34,10 @@ namespace Capa.BL
         {
             return db.obtenerEstablecimeinto(ese);
         }
+        public List<Unidad_De_Medida_E> ObtenerUnidadDeMedida()
+        {
+            return db.obtenerUnidadDeMedida();
+        }
 
     }
 }

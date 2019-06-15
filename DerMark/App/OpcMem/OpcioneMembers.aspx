@@ -20,12 +20,12 @@
     <link href="css/animsition.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+          <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <link href="../../bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../../bootstrap-4.0.0/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
      
 
 
@@ -52,7 +52,7 @@
                 </ul>
               
             </nav>
-            <a class="btn btn-outline-primary" href="../Login/Login.aspx">Ingresar</a>
+            <a class="btn btn-outline-primary btn-sm" href="../Login/Login.aspx">Ingresar</a>
         </div>
         <!--header ends-->
 
@@ -60,10 +60,11 @@
 
 
             <div class="container text-xs-center m-b-20">
-                <h1 class="font-black">Elije tu membresía de acuerdo a tus gustos</h1>
+                <h1 class="font-black">Elija su plan DerMark Food</h1>
                 <%--<p class="font-white">Find restaurants, specials, and coupons for free</p>--%>
             </div>
 
+          <div class="container">
             <div class="card-deck mb-3 text-center">
 
                 <div class="card mb-4 box-shadow">
@@ -97,40 +98,12 @@
                     </div>
                 </div>
             </div>
-
+              </div>
 
 
             <!-- end:Container -->
         </div>
-        <section class="app-section">
-            <div class="app-wrap">
-                <div class="container">
-                    <div class="row text-img-block text-xs-left">
-                        <div class="container">
-                            <div class="col-xs-12 col-sm-6 hidden-xs-down right-image text-center">
-                                <figure>
-                                    <img src="images/app.png" alt="Right Image">
-                                </figure>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 left-text">
-                                <h3>The Best Food Delivery App</h3>
-                                <p>Now you can make food happen pretty much wherever you are thanks to the free easy-to-use Food Delivery &amp; Takeout App.</p>
-                                <div class="social-btns">
-                                    <a href="#" class="app-btn apple-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-apple"></i></div>
-                                        <div class="pull-right"><span class="text">Available on the</span> <span class="text-2">App Store</span> </div>
-                                    </a>
-                                    <a href="#" class="app-btn android-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-android"></i></div>
-                                        <div class="pull-right"><span class="text">Available on the</span> <span class="text-2">Play store</span> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
 
     </div>
@@ -158,7 +131,7 @@
 
         function pagar() {
         
-            location.href = "../Pago/PagoMembresia.aspx";
+            location.href = "../../Cliente/RegistroCliente.aspx";
         }
         
     </script>

@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="CssModificado/Ingredientes.css" rel="stylesheet" />
+       <script src="Ajax/tipo_producto.js"></script>
 
     <div class="br-pagetitle">
     </div>

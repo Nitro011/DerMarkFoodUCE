@@ -25,7 +25,8 @@ function enviar1() {
     var cantidad = $('#cantidadU').val()
     var unidad_de_medida = $('#unidad_medida').val();
     var descripcion = $('#descripcion').val();
-    
+    var costov = $('#cost').val();
+
 
     if (nombre_producto == "") {
 
@@ -49,13 +50,21 @@ function enviar1() {
 
 
     }
+
+    else if (costov == "") {
+
+        $("#alerta").html('<div class="alert alert-info" role="alert"> Datos incompletos </div>');
+
+
+    }
+
    
 
         
 
     else {
 
-        var value = { nombreProducto: nombre_producto, cantidad: cantidad, unidadM: unidad_de_medida, descripcionP: descripcion };
+        var value = { nombreProducto: nombre_producto, cantidad: cantidad, unidadM: unidad_de_medida, descripcionP: descripcion, costo: costov };
 
 
         $.ajax({
@@ -69,10 +78,13 @@ function enviar1() {
 
 
                     $("#alerta").html('<div class="alert alert-danger" role="alert"> La informacion que introdujiste existe en nuestros registros </div>');
+
+
                 }
                 else {
 
                     $("#alerta").html('<div class="alert alert-success" role="alert"> La informacion que introdujiste se registro correctamente </div>');
+                    location.href = "Ingredientes.aspx";
 
                 }
 
@@ -89,3 +101,26 @@ function enviar1() {
 }
 
 
+//obtener tipo de empleado
+$(document).ready(function () {
+
+    $.ajax({
+        url: 'RegistrarIngredientes.aspx/llenarUnidadDeMedida',
+        method: 'post',
+        contentType: "application/json",
+        dataType: "json",
+        success: function (data) {
+            $.each(data.d, function (i, value) {
+
+
+                $("#unidad_medida").append("<option value=" + value.id + ">" + value.unidad_de_medida + "</option>");
+            });
+
+
+        },
+        error: function (err) {
+            alert(err);
+        }
+    });
+
+});

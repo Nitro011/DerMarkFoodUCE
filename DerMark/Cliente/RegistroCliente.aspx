@@ -58,12 +58,12 @@
                        <%-- <a class="p-2 text-white" href="#">Buscar Food</a>--%>
                     </li>
                     <li class="nav-item">
-                        <a class="p-2 text-white" href="../App/OpcMem/OpcioneMembers.aspx">Registrarse</a>
+                        <a class="p-2 text-white" href="../App/selecClnAdm.aspx">Registrarse</a>
                     </li>
                 </ul>
             </nav>
             
-            <a class="btn btn-outline-primary" href="../App/Login/Login.aspx">Ingresar</a>
+            <a class="btn btn-outline-primary btn-sm" href="../App/Login/Login.aspx">Ingresar</a>
         </div>
         <!--header ends-->
         <div class="page-wrapper">

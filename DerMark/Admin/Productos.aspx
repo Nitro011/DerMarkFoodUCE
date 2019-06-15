@@ -2,6 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <link href="CssModificado/Ingredientes.css" rel="stylesheet" />
 
+    <script src="Ajax/productos.js"></script>
+
     <div class="br-pagetitle">
     </div>
     <!-- d-flex -->
@@ -23,12 +25,14 @@
 
                     <thead>
                         <tr>
-                            <th class="wd-15p">Codigo</th>
-                            <th class="wd-15p">Tipo de producto</th>
-                            <th class="wd-20p">Nombre del producto</th>
+                             <th class="wd-15p">Productos</th>
+                            <th class="wd-15p">Cantidad</th>
+                            <th class="wd-20p">Unidad de Medida</th>
+                              <th class="wd-20p">Costo</th>
+                             <th class="wd-20p">Precio Venta</th>
+
                             <th class="wd-15p">Descripción</th>
-                            <th class="wd-10p">Cantidad</th>
-                             <th class="wd-10p">Precio</th>
+                            <th class="wd-10p">Estado</th>
 
 
                         </tr>

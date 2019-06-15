@@ -21,14 +21,16 @@ namespace Capa.Datos
             {
                 cn.Open();
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = "InsertarIngredientes";
+                cmd.CommandText = "insertar_Ingredientes";
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@productos",pe.nombres_productos);
+                cmd.Parameters.AddWithValue("@nombre_producto", pe.nombres_productos);
                 cmd.Parameters.AddWithValue("@cantidad", pe.cantidad);
                 cmd.Parameters.AddWithValue("@unidad_de_medida", pe.unidad_de_medida);
                 cmd.Parameters.AddWithValue("@descripcion", pe.descripcion);
-              
+                cmd.Parameters.AddWithValue("@costo", pe.costo);
+
+
 
 
                 return cmd.ExecuteScalar();
@@ -49,7 +51,7 @@ namespace Capa.Datos
             {
                 cn.Open();
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = "ObtenerIngrediente";
+                cmd.CommandText = "consultar_almacen";
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
 
@@ -59,9 +61,11 @@ namespace Capa.Datos
                     Productos_Ingredientes_E obj = new Productos_Ingredientes_E();
 
                     
-                    obj.nombres_productos = reader["productos"].ToString();
+                    obj.nombres_productos = reader["nombre_producto"].ToString();
                     obj.cantidad = Convert.ToInt32(reader["cantidad"].ToString());
-                    obj.unidad_de_medida = Convert.ToDecimal(reader["unidad_de_medida"].ToString());
+                    obj.unidadMedidastr =reader["unidad_de_medida"].ToString();
+                    obj.costo = Convert.ToDecimal(reader["costo"].ToString());
+                                     
                     obj.descripcion = reader["descripcion"].ToString();
                     obj.estado = reader["estados"].ToString();
                     ingredientes.Add(obj);

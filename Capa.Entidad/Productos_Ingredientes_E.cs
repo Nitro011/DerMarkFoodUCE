@@ -15,8 +15,10 @@ namespace Capa.Entidad
         public decimal unidad_de_medida { get; set; }
         public string descripcion { get; set; }
         public string estado { get; set; }
-
-
+        public decimal costo { get; set; }
+   
+        public string unidadMedidastr { get; set; }
+     
 
     }
 }

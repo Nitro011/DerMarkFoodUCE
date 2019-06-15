@@ -4,6 +4,8 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+     <script src="Ajax/ingredientes.js"></script>
     <link href="CssModificado/Ingredientes.css" rel="stylesheet" />
 
     <div class="br-pagetitle">
@@ -30,6 +32,9 @@
                             <th class="wd-15p">Productos</th>
                             <th class="wd-15p">Cantidad</th>
                             <th class="wd-20p">Unidad de Medida</th>
+                              <th class="wd-20p">Costo</th>
+                           
+
                             <th class="wd-15p">Descripción</th>
                             <th class="wd-10p">Estado</th>
 

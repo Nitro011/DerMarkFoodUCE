@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/index.Master" AutoEventWireup="true" CodeBehind="RegistrarProducto.aspx.cs" Inherits="DerMark.Admin.RegistrarProducto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <script src="Ajax/productos.js"></script>
+
     <div class="br-pagetitle">
     </div>
     <!-- d-flex -->
@@ -23,16 +26,7 @@
                     </div>
 
 
-                    <div class="row mg-t-20">
-                         <label class="col-sm-4 form-control-label">Categoria <span class="tx-danger">*</span></label>
-                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <select class="form-control" id="dropcategoria">
-                            <option value="">Seleccionar</option>
-                           
-                        </select>
-                            </div>
-                    </div>
-
+                   
 
                     <!-- row -->
                     <div class="row mg-t-20">
@@ -42,8 +36,27 @@
                         </div>
                     </div>
 
+                     <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Unidad de medida <span class="tx-danger">*</span></label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <select id="unidad_medida" class="custom-select" required="required">
+                                <option value="" selected>Selecciona</option>
+                              
+
+
+                            </select>
+                        </div>
+                    </div>
+
+                        <div class="row mg-t-20">
+                        <label class="col-sm-4 form-control-label">Costo <span class="tx-danger">*</span></label>
+                        <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                            <input type="text" class="form-control" id="cost" placeholder="Precio" required="required">
+                        </div>
+                    </div>
+
                     <div class="row mg-t-20">
-                        <label class="col-sm-4 form-control-label">Precio <span class="tx-danger">*</span></label>
+                        <label class="col-sm-4 form-control-label">Precio de venta <span class="tx-danger">*</span></label>
                         <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                             <input type="text" class="form-control" id="pre" placeholder="Precio" required="required">
                         </div>

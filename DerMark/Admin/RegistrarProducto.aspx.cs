@@ -18,23 +18,25 @@ namespace DerMark.Admin
         }
 
         [WebMethod]
-        public static object insertar(string nombreProducto, string categoria, string cantidad, string precio, string descripcion)
+        public static object insertar(string nombreProducto, string cantidad, string unidad_de_medida, string descripcion,string costo,string precio_ventas)
         {
 
-            int categoriaC = Convert.ToInt32(categoria);
+            int unidad_de_medidav = Convert.ToInt32(unidad_de_medida);
             int cantidadC = Convert.ToInt32(cantidad);
-            decimal precioC = Convert.ToDecimal(precio);
+            decimal precioC = Convert.ToDecimal(costo);
+            decimal precioV = Convert.ToDecimal(precio_ventas);
 
             Producto_BL bc = new Producto_BL();
 
 
             Productos_E pro = new Productos_E();
 
-            pro.nombre_producto = nombreProducto;
-            pro.tipo_producto = categoriaC;
-            pro.cantidad = cantidadC;
-            pro.precio = precioC;
+            pro.nombres_productos = nombreProducto;
             pro.descripcion = descripcion;
+            pro.cantidad = cantidadC;
+            pro.precio_ventas = precioV;
+            pro.costo = precioC;
+            pro.unidad_de_medida = unidad_de_medidav;
 
 
 
@@ -46,14 +48,25 @@ namespace DerMark.Admin
 
 
 
+        //[WebMethod]
+        //public static object ObtenerCategoria()
+        //{
+
+        //    Tipo_Producto_BL p = new Tipo_Producto_BL();
+
+
+        //    return p.Obtener_tipoProducto();
+
+
+        //}
+
         [WebMethod]
-        public static object ObtenerCategoria()
+        public static object llenarUnidadDeMedida()
         {
+            LlenarDropDown_BL ll = new LlenarDropDown_BL();
 
-            Tipo_Producto_BL p = new Tipo_Producto_BL();
+            return ll.ObtenerUnidadDeMedida();
 
-
-            return p.Obtener_tipoProducto();
 
 
         }
